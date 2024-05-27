@@ -29,6 +29,12 @@ main {
   font-size: 36px;
   line-height: 128%;
   color: #39404b;
+  @media (max-width: 1200px) {
+    font-size: 30px;
+  }
+  @media (max-width: 576px) {
+    font-size: 24px;
+  }
 }
 .text {
   font-size: 20px;

@@ -1,6 +1,10 @@
 .must-be {
   padding: 70px 0;
   margin-bottom: 100px;
+  @media (max-width: 576px) {
+    padding: 30px 0;
+    margin-bottom: 10px;
+  }
   &__container {
     max-width: 1216px;
     margin: 0 auto;
@@ -9,10 +13,16 @@
     display: grid;
     grid-template-columns: 1fr 384px;
     gap: 20px;
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
     & > div {
       background-color: white;
       padding: 70px 72px;
       border-radius: 15px;
+      @media (max-width: 992px) {
+        padding: 30px;
+      }
       &:first-child {
         & > h2 {
           margin-bottom: 34px;
@@ -22,45 +32,53 @@
         }
       }
       &:last-child {
-        position: relative;
-        & > img {
-          width: 100%;
-          height: 240px;
-          border-radius: 100%;
-          object-fit: cover;
-          margin-bottom: 20px;
-        }
-        & > p {
+        & > div {
           text-align: center;
-          font-weight: 600;
-          margin-bottom: 5px;
-        }
-        & > span {
-          font-size: 16px;
-          line-height: 125%;
-          text-align: center;
-          color: #6d7a8c;
-          display: block;
-        }
-        &::before {
-          content: "спикер";
-          display: block;
-          width: 80px;
-          height: 80px;
-          border-radius: 100%;
-          background: #39404b;
-          position: absolute;
-          right: 0;
-          top: 0;
-          transform: translateX(25%) translateY(-25%);
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          font-family: var(--second-family);
-          font-weight: 700;
-          font-size: 16px;
-          line-height: 125%;
-          color: #fff;
+          position: relative;
+          width: fit-content;
+          margin: 0 auto;
+          & > img {
+            width: 240px;
+            height: 240px;
+            border-radius: 100%;
+            object-fit: cover;
+            margin-bottom: 20px;
+          }
+          & > p {
+            text-align: center;
+            font-weight: 600;
+            margin-bottom: 5px;
+          }
+          & > span {
+            font-size: 16px;
+            line-height: 125%;
+            text-align: center;
+            color: #6d7a8c;
+            display: block;
+          }
+          &::before {
+            content: "спикер";
+            display: block;
+            width: 80px;
+            height: 80px;
+            border-radius: 100%;
+            background: #39404b;
+            position: absolute;
+            right: 0;
+            top: 0;
+            transform: translateX(25%) translateY(-25%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--second-family);
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 125%;
+            color: #fff;
+            @media (max-width: 768px) {
+              top: 20px;
+            }
+          }
         }
       }
     }

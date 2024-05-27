@@ -129,6 +129,16 @@ main {
   line-height: 128%;
   color: #39404b;
 }
+@media (max-width: 1200px) {
+  .subtitle {
+    font-size: 30px;
+  }
+}
+@media (max-width: 576px) {
+  .subtitle {
+    font-size: 24px;
+  }
+}
 
 .text {
   font-size: 20px;
@@ -146,6 +156,21 @@ main {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+@media (max-width: 992px) {
+  .footer > div {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+}
+@media (max-width: 576px) {
+  .footer > div {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
 }
 .footer__block-1 {
   display: -webkit-box;
@@ -246,6 +271,16 @@ main {
   font-family: var(--second-family);
   margin-bottom: 70px;
 }
+@media (max-width: 1200px) {
+  .intro > div > h1 {
+    font-size: 34px;
+  }
+}
+@media (max-width: 576px) {
+  .intro > div > h1 {
+    font-size: 24px;
+  }
+}
 .intro__grid {
   display: -ms-grid;
   display: grid;
@@ -275,12 +310,24 @@ main {
   padding: 100px 0;
   background: #f4f7fc;
 }
+@media (max-width: 576px) {
+  .what-will {
+    padding: 30px 0;
+  }
+}
 .what-will > div {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
+}
+@media (max-width: 768px) {
+  .what-will > div {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
 }
 .what-will > div > ul {
   display: -webkit-box;
@@ -311,6 +358,12 @@ main {
   padding: 70px 0;
   margin-bottom: 100px;
 }
+@media (max-width: 576px) {
+  .must-be {
+    padding: 30px 0;
+    margin-bottom: 10px;
+  }
+}
 .must-be__container {
   max-width: 1216px;
   margin: 0 auto;
@@ -322,10 +375,21 @@ main {
   grid-template-columns: 1fr 384px;
   gap: 20px;
 }
+@media (max-width: 768px) {
+  .must-be > div {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
 .must-be > div > div {
   background-color: white;
   padding: 70px 72px;
   border-radius: 15px;
+}
+@media (max-width: 992px) {
+  .must-be > div > div {
+    padding: 30px;
+  }
 }
 .must-be > div > div:first-child > h2 {
   margin-bottom: 34px;
@@ -333,30 +397,35 @@ main {
 .must-be > div > div:first-child > p {
   max-width: 656px;
 }
-.must-be > div > div:last-child {
+.must-be > div > div:last-child > div {
+  text-align: center;
   position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
 }
-.must-be > div > div:last-child > img {
-  width: 100%;
+.must-be > div > div:last-child > div > img {
+  width: 240px;
   height: 240px;
   border-radius: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   margin-bottom: 20px;
 }
-.must-be > div > div:last-child > p {
+.must-be > div > div:last-child > div > p {
   text-align: center;
   font-weight: 600;
   margin-bottom: 5px;
 }
-.must-be > div > div:last-child > span {
+.must-be > div > div:last-child > div > span {
   font-size: 16px;
   line-height: 125%;
   text-align: center;
   color: #6d7a8c;
   display: block;
 }
-.must-be > div > div:last-child::before {
+.must-be > div > div:last-child > div::before {
   content: "спикер";
   display: block;
   width: 80px;
@@ -384,6 +453,11 @@ main {
   line-height: 125%;
   color: #fff;
 }
+@media (max-width: 768px) {
+  .must-be > div > div:last-child > div::before {
+    top: 20px;
+  }
+}
 
 .form {
   background-color: #39404b;
@@ -396,6 +470,12 @@ main {
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
+}
+@media (max-width: 768px) {
+  .form > div {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
 }
 .form > div > div > h2 {
   color: white;
