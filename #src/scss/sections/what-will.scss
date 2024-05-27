@@ -1,0 +1,22 @@
+.what-will {
+  padding: 100px 0;
+  background: #f4f7fc;
+  & > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    & > ul {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      & > li {
+        display: flex;
+        align-items: flex-start;
+        gap: 32px;
+        & > img {
+          transform: translateY(3px);
+        }
+      }
+    }
+  }
+}

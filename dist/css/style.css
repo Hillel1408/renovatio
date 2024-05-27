@@ -1,3 +1,5 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap");
 * {
   padding: 0px;
   margin: 0px;
@@ -39,7 +41,7 @@ body {
 
 body {
   line-height: 1;
-  font-family: "Manrope", sans-serif;
+  font-family: var(--font-family), sans-serif;
   text-rendering: optimizeLegibility;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
@@ -49,7 +51,7 @@ body {
 input,
 button,
 textarea {
-  font-family: "Manrope", sans-serif;
+  font-family: var(--font-family), sans-serif;
 }
 
 input::-ms-clear {
@@ -90,4 +92,372 @@ h5,
 h6 {
   font-weight: inherit;
   font-size: inherit;
+}
+
+:root {
+  --font-family: "IBM Plex Sans", sans-serif;
+  --second-family: "Onest", sans-serif;
+  --third-family: "SF Pro Display", sans-serif;
+  --font3: "PT Root UI", sans-serif;
+  --font4: "Arial", sans-serif;
+}
+
+main {
+  background-color: #f4f7fc;
+}
+
+.container {
+  max-width: 1112px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.btn {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  color: #fff;
+  border-radius: 8px;
+  background: #27aae1;
+  padding: 20px 30px;
+}
+
+.subtitle {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 128%;
+  color: #39404b;
+}
+
+.text {
+  font-size: 20px;
+  line-height: 140%;
+  color: #39404b;
+}
+
+.footer {
+  padding: 50px 0;
+}
+.footer > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer__block-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 11px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.footer__block-1 > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3px;
+}
+.footer__block-1 > div > p {
+  font-size: 12px;
+  line-height: 150%;
+  color: #959dab;
+}
+.footer__block-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+}
+.footer__block-2 > a {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125%;
+  color: #39404b;
+}
+.footer__block-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+}
+.footer__block-3 > a {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125%;
+  color: #27aae1;
+}
+.footer__block-4 > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+}
+.footer__block-4 > ul > li > a {
+  width: 32px;
+  height: 32px;
+  background-color: #39404b;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.intro {
+  padding: 48px 0 72px 0;
+  background-image: url("../img/bg-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 15px;
+  background-color: #f4f7fc;
+}
+.intro > div > img {
+  margin-bottom: 93px;
+}
+.intro > div > h1 {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 127%;
+  color: #fff;
+  font-family: var(--second-family);
+  margin-bottom: 70px;
+}
+.intro__grid {
+  display: -ms-grid;
+  display: grid;
+  gap: 20px;
+  -ms-grid-columns: 137px 201px;
+  grid-template-columns: 137px 201px;
+  margin-bottom: 40px;
+}
+.intro__grid > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  color: #fff;
+  border: 1px solid rgba(192, 200, 214, 0.3);
+  border-radius: 8px;
+  padding: 18px;
+}
+
+.what-will {
+  padding: 100px 0;
+  background: #f4f7fc;
+}
+.what-will > div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.what-will > div > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+}
+.what-will > div > ul > li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 32px;
+}
+.what-will > div > ul > li > img {
+  -webkit-transform: translateY(3px);
+      -ms-transform: translateY(3px);
+          transform: translateY(3px);
+}
+
+.must-be {
+  padding: 70px 0;
+  margin-bottom: 100px;
+}
+.must-be__container {
+  max-width: 1216px;
+  margin: 0 auto;
+}
+.must-be > div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 384px;
+  grid-template-columns: 1fr 384px;
+  gap: 20px;
+}
+.must-be > div > div {
+  background-color: white;
+  padding: 70px 72px;
+  border-radius: 15px;
+}
+.must-be > div > div:first-child > h2 {
+  margin-bottom: 34px;
+}
+.must-be > div > div:first-child > p {
+  max-width: 656px;
+}
+.must-be > div > div:last-child {
+  position: relative;
+}
+.must-be > div > div:last-child > img {
+  width: 100%;
+  height: 240px;
+  border-radius: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 20px;
+}
+.must-be > div > div:last-child > p {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.must-be > div > div:last-child > span {
+  font-size: 16px;
+  line-height: 125%;
+  text-align: center;
+  color: #6d7a8c;
+  display: block;
+}
+.must-be > div > div:last-child::before {
+  content: "спикер";
+  display: block;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background: #39404b;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transform: translateX(25%) translateY(-25%);
+      -ms-transform: translateX(25%) translateY(-25%);
+          transform: translateX(25%) translateY(-25%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 125%;
+  color: #fff;
+}
+
+.form {
+  background-color: #39404b;
+  border-radius: 15px;
+  padding: 70px 0;
+}
+.form > div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.form > div > div > h2 {
+  color: white;
+  margin-bottom: 34px;
+}
+.form > div > div > p {
+  color: white;
+}
+.form > div > form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+}
+.form > div > form > input {
+  background-color: #6d7a8c;
+  border-radius: 8px;
+  padding: 16px;
+  font-size: 16px;
+  line-height: 150%;
+  color: #c0c8d6;
+}
+.form > div > form > input::-webkit-input-placeholder {
+  font-size: 16px;
+  line-height: 150%;
+  color: #c0c8d6;
+}
+.form > div > form > input::-moz-placeholder {
+  font-size: 16px;
+  line-height: 150%;
+  color: #c0c8d6;
+}
+.form > div > form > input:-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 150%;
+  color: #c0c8d6;
+}
+.form > div > form > input::-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 150%;
+  color: #c0c8d6;
+}
+.form > div > form > input::placeholder {
+  font-size: 16px;
+  line-height: 150%;
+  color: #c0c8d6;
+}
+.form > div > form > div {
+  margin-top: 10px;
+}
+.form > div > form > div > p {
+  margin-bottom: 15px;
+  font-size: 13px;
+  line-height: 138%;
+  color: #c0c8d6;
+}
+.form > div > form > div > p > a {
+  color: #27aae1;
+}
+.form > div > form > div > button {
+  width: 100%;
 }

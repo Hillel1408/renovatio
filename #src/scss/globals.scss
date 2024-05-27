@@ -1,2 +1,37 @@
+:root {
+  --font-family: "IBM Plex Sans", sans-serif;
+  --second-family: "Onest", sans-serif;
+  --third-family: "SF Pro Display", sans-serif;
+  --font3: "PT Root UI", sans-serif;
+  --font4: "Arial", sans-serif;
+}
+
+main {
+  background-color: #f4f7fc;
+}
 .container {
+  max-width: 1112px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.btn {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  color: #fff;
+  border-radius: 8px;
+  background: #27aae1;
+  padding: 20px 30px;
+}
+.subtitle {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 128%;
+  color: #39404b;
+}
+.text {
+  font-size: 20px;
+  line-height: 140%;
+  color: #39404b;
 }

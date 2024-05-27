@@ -1,0 +1,40 @@
+.intro {
+  padding: 48px 0 72px 0;
+  background-image: url("../img/bg-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 15px;
+  background-color: #f4f7fc;
+  & > div {
+    & > img {
+      margin-bottom: 93px;
+    }
+    & > h1 {
+      font-weight: 700;
+      font-size: 44px;
+      line-height: 127%;
+      color: #fff;
+      font-family: var(--second-family);
+      margin-bottom: 70px;
+    }
+  }
+  &__grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 137px 201px;
+    margin-bottom: 40px;
+    & > div {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 100%;
+      color: #fff;
+      border: 1px solid rgba(192, 200, 214, 0.3);
+      border-radius: 8px;
+      padding: 18px;
+    }
+  }
+}

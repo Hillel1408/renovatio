@@ -1,0 +1,52 @@
+.form {
+  background-color: #39404b;
+  border-radius: 15px;
+  padding: 70px 0;
+  & > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    & > div {
+      & > h2 {
+        color: white;
+        margin-bottom: 34px;
+      }
+      & > p {
+        color: white;
+      }
+    }
+    & > form {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      & > input {
+        background-color: #6d7a8c;
+        border-radius: 8px;
+        padding: 16px;
+        font-size: 16px;
+        line-height: 150%;
+        color: #c0c8d6;
+        &::placeholder {
+          font-size: 16px;
+          line-height: 150%;
+          color: #c0c8d6;
+        }
+      }
+      & > div {
+        margin-top: 10px;
+        & > p {
+          margin-bottom: 15px;
+          font-size: 13px;
+          line-height: 138%;
+          color: #c0c8d6;
+          & > a {
+            color: #27aae1;
+          }
+        }
+        & > button {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
