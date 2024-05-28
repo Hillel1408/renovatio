@@ -1,11 +1,14 @@
 .form {
-  background-color: #39404b;
-  border-radius: 15px;
-  padding: 70px 0;
   & > div {
+    background-color: #39404b;
+    border-radius: 15px;
+    padding: 70px 72px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+    @media (max-width: 992px) {
+      padding: 70px 30px;
+    }
     @media (max-width: 768px) {
       grid-template-columns: 1fr;
     }

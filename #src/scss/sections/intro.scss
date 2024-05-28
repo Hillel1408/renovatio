@@ -1,13 +1,16 @@
 .intro {
-  padding: 48px 0 72px 0;
-  background-image: url("../img/bg-1.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
   background-color: #f4f7fc;
   & > div {
+    background-image: url("../img/bg-1.png");
+    padding: 48px 72px 72px 72px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    @media (max-width: 992px) {
+      padding: 30px;
+    }
     & > img {
       margin-bottom: 93px;
     }
